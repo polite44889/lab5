@@ -19,11 +19,10 @@ pipeline{
     }
   }
   stage('Test'){
-    agent{ docker {image 'python:3'
+    agent{ docker {image 'alpine'
                    args '-u=\"root\"'
                   }}
     steps{
-      sh 'apk add --update py-pip'
       sh 'pip install Flask'
       sh 'pip install xmlrunner'
       sh 'phyton3 tested_app.py'
