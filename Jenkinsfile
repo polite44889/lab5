@@ -26,7 +26,7 @@ pipeline{
       sh 'apk add --update python3 py-pip'
       sh 'pip install Flask'
       sh 'pip install xmlrunner'
-      sh 'phyton3 labtest.py'
+      sh 'phyton3 tested_app.py'
     }
     post{
       always{
