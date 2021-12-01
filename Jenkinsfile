@@ -23,8 +23,6 @@ pipeline{
                    args '-u=\"root\"'
                   }}
     steps{
-      sh 'pip install Flask'
-      sh 'pip install xmlrunner'
       sh 'phyton3 tested_app.py'
     }
     post{
