@@ -10,7 +10,8 @@ pipeline{
       }
     
     }
-  }
+ 
+  
   stage('Build'){
     steps{
       echo "Building ...${BUILD_NUMBER}"
@@ -39,5 +40,5 @@ pipeline{
       }
     }
   }
-
+ }
 }
