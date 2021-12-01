@@ -19,7 +19,7 @@ pipeline{
     }
   }
   stage('Test'){
-    agent{ docker {image 'alpine'
+    agent{ docker {image 'python:3'
                    args '-u=\"root\"'
                   }}
     steps{
