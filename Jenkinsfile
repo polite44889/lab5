@@ -19,9 +19,7 @@ pipeline{
     }
   }
   stage('Test'){
-    agent{ docker {image 'phyton:3'
-                  
-                  }}
+   
     steps{
       sh 'phyton3 tested_app.py'
     }
