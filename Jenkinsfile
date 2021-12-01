@@ -23,8 +23,7 @@ pipeline{
                    
                   }}
     steps{
-      sh 'pip3 install Flask'
-      sh 'pip3 install xmlrunner'
+      
       sh 'python3 tested_app.py'
     }
     post{
