@@ -19,7 +19,7 @@ pipeline{
     }
   }
   stage('Test'){
-    agent{ docker {image 'alphine'
+    agent{ docker {image 'lab5-jenkins'
                    args '-u=\"root\"'
                   }}
     steps{
