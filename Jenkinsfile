@@ -23,7 +23,7 @@ pipeline{
                    args '-u=\"root\"'
                   }}
     steps{
-      sh 'apk add --update python3 py-pip'
+      sh 'apk add --update py-pip'
       sh 'pip install Flask'
       sh 'pip install xmlrunner'
       sh 'phyton3 tested_app.py'
