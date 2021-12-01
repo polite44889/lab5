@@ -19,7 +19,7 @@ pipeline{
   }
   stage('Test'){
     agent{ docker {image 'alphine'
-                   args '-u=\"root"\'
+                   args '-u=\"root\"'
                   }}
     steps{
       sh 'apk add --update python3 py-pip'
