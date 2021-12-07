@@ -1,19 +1,10 @@
 pipeline {
-    options {timestamps()}
-
-    agent none 
+    agent { docker { image 'python:3.5.1' } }
     stages {
-        stage('Check scm') {
-            agent any
+        stage('build') {
             steps {
-                checkout scm
+                sh 'python --version'
             }
         }
-        stage("Build") {
-            steps {
-                echo "Building ...${BUILD_NUMBER}"
-                echo "Build completed"
-            }
-        }
-    }// stages
+    }
 }
