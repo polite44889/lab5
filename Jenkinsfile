@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             agent { docker { image 'alpine' } }
             steps {
-                echo '123'
+                sh '123'
             }
         }
     }
