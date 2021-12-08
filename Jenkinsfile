@@ -1,7 +1,7 @@
 pipeline {
-    agent { docker { image 'alpine' } }
     stages {
         stage('build') {
+            agent { docker { image 'alpine' } }
             steps {
                 echo '123'
             }
